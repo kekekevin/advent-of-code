@@ -24,3 +24,9 @@
 
 (defn aoc3-1 [input]
   (count (travel input)))
+
+(defn aoc3-2 [input]
+  (let [indexed-input (map-indexed vector input)
+       santa (filter #(even? (get % 0)) indexed-input)
+       robo (filter #(odd? (get % 0)) indexed-input)]
+    (count (union (travel (map #(get % 1) santa)) (travel (map #(get % 1) robo))))))
