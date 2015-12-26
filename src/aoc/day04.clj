@@ -7,14 +7,14 @@
 (defn coin? [hash pattern]
   (= pattern (take (count pattern) hash)))
 
-(defn find [input pattern]
+(defn find-coin [input pattern]
   (loop [number 1]
     (if (coin? (mine input number) pattern)
       number
       (recur (+ 1 number)))))
 
 (defn aoc4-1 [input]
-  (find input [\0 \0 \0 \0 \0]))
+  (find-coin input [\0 \0 \0 \0 \0]))
 
 (defn aoc4-2 [input]
-  (find input [\0 \0 \0 \0 \0 \0]))
+  (find-coin input [\0 \0 \0 \0 \0 \0]))
