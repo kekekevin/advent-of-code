@@ -3,6 +3,7 @@
   (:require [aoc.day01 :refer [aoc1-1 aoc1-2]])
   (:require [aoc.day02 :refer [aoc2-1 aoc2-2]])
   (:require [aoc.day03 :refer [aoc3-1 aoc3-2]])
+  (:require [aoc.day04 :refer [aoc4-1]])
   (:gen-class))
 
 
@@ -13,5 +14,6 @@
   (println "2-1: " (aoc2-1 (split (slurp "2.in") #"\n")))
   (println "2-2: " (aoc2-2 (split (slurp "2.in") #"\n")))
   (println "3-1: " (aoc3-1 (trim (slurp "3.in"))))
-  (println "3-2: " (aoc3-2 (trim (slurp "3.in")))))
+  (println "3-2: " (aoc3-2 (trim (slurp "3.in"))))
+  (println "4-1: " (aoc4-1 "yzbqklnj")))
 
