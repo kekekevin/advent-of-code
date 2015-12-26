@@ -9,12 +9,13 @@
   (loop [position 1
          floor 0
          remaining input]
-    (if (= -1 (+ floor (move (first remaining))))
+    (let [floor (+ floor (move (first remaining)))]
+    (if (= -1 floor)
       position
       (recur (+ 1 position) 
-             (+ floor (move (first remaining)))
+             (+ floor )
              (rest remaining))
-    )))
+    ))))
 
 (defn aoc1-1 [input]
   (reduce (fn [sum c]

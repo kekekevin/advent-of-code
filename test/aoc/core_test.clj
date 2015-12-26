@@ -4,11 +4,11 @@
 
 (deftest aoc1-test
   (testing "example 1"
-    (is (= 0 (aoc1 "()()")))
-    (is (= 0 (aoc1 "(())")))
+    (is (= 0 (aoc1-1 "()()")))
+    (is (= 0 (aoc1-1 "(())")))
     )
   (testing "example 2"
-    (is (= 3 (aoc1 "(((")))
-    (is (= 3 (aoc1 "(()(()(")))
+    (is (= 3 (aoc1-1 "(((")))
+    (is (= 3 (aoc1-1 "(()(()(")))
     )
   )
