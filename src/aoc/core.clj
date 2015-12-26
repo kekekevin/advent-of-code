@@ -1,5 +1,5 @@
 (ns aoc.core
-  (:require [clojure.string :refer [trim]])
+  (:require [clojure.string :refer [trim split]])
   (:require [aoc.day01 :refer [aoc1-1 aoc1-2]])
   (:gen-class))
 
