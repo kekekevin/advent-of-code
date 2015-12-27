@@ -23,3 +23,16 @@
     (is (= false (nice? "haegwjzuvuyypxyu")))
     (is (= false (nice? "dvszwmarrgswjxmb")))))
 
+(deftest aoc5-2-test
+  (testing "repeating-pair?"
+    (is (= true (repeating-pair? "xyxy")))
+    (is (= true (repeating-pair? "aabcdefgaa")))
+    (is (= false (repeating-pair? "aaa"))))
+  (testing "split-pair?"
+    (is (= true (split-pair? "xyx")))
+    (is (= true (split-pair? "aaa"))))
+  (testing "real-nice?"
+    (is (= true (real-nice? "qjhvhtzxzqqjkmpb")))
+    (is (= true (real-nice? "xxyxx")))
+    (is (= false (real-nice? "uurcxstgmygtbstg")))
+    (is (= false (real-nice? "ieodomkazucvgmuy")))))
