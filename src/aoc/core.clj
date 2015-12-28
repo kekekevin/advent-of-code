@@ -5,6 +5,7 @@
   (:require [aoc.day03 :refer [aoc3-1 aoc3-2]])
   (:require [aoc.day04 :refer [aoc4-1 aoc4-2]])
   (:require [aoc.day05 :refer [aoc5-1 aoc5-2]])
+  (:require [aoc.day06 :refer [aoc6-1]])
   (:gen-class))
 
 
@@ -19,5 +20,6 @@
   ;;(println "4-1: " (aoc4-1 "yzbqklnj"))
   ;;(println "4-2: " (aoc4-2 "yzbqklnj"))
   (println "5-1: " (aoc5-1 (split (trim (slurp "5.in")) #"\n")))
-  (println "5-2: " (aoc5-2 (split (trim (slurp "5.in")) #"\n"))))
+  (println "5-2: " (aoc5-2 (split (trim (slurp "5.in")) #"\n")))
+  (println "6-1: " (aoc6-1 (split (trim (slurp "6.in")) #"\n"))))
 
